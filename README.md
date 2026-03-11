@@ -11,28 +11,28 @@ API REST para gestión de tareas de equipo.
 
 # Cómo ejecutar localmente
 
-1 Clonar el repositorio
-2 Crear entorno virtual: "python -m venv venv"
-3 Activar entorno virtual: "venv\Scripts\activate"
-4 Instalar dependencias: "pip install -r requirements.txt"
-5 Configurar variables de base de datos en "settings.py"
-6 Correr migraciones: "py manage.py migrate"
-7 Iniciar servidor: "py manage.py runserver"
+1. Clonar el repositorio
+2. Crear entorno virtual: "python -m venv venv"
+3. Activar entorno virtual: "venv\Scripts\activate"
+4. Instalar dependencias: "pip install -r requirements.txt"
+5. Configurar variables de base de datos en "settings.py"
+6. Correr migraciones: "py manage.py migrate"
+7. Iniciar servidor: "py manage.py runserver"
 
 # Cómo levantar con Docker
 
-1 Levantar contenedor: "docker build -t wizz_life ."
-2 Correr contenedor: "docker run -p 8000:8000 wizz_life"
+1. Levantar contenedor: "docker build -t wizz_life ."
+2. Correr contenedor: "docker run -p 8000:8000 wizz_life"
 
 # Endpoints
 
-| POST | /signup/ | Registro de usuario | No |
-| POST | /signin/ | Login, devuelve token JWT | No |
-| GET | /tasks/ | Listar tareas | Sí |
-| POST | /tasks/ | Crear tarea | Sí |
-| GET | /tasks/{id}/ | Detalle de tarea | Sí |
-| PATCH | /tasks/{id}/ | Actualizar tarea | Sí |
-| DELETE | /tasks/{id}/ | Eliminar tarea | Sí |
+1. POST | /signup/ | Registro de usuario | No |
+2. POST | /signin/ | Login, devuelve token JWT | No |
+3. GET | /tasks/ | Listar tareas | Sí |
+4. POST | /tasks/ | Crear tarea | Sí |
+5. GET | /tasks/{id}/ | Detalle de tarea | Sí |
+6. PATCH | /tasks/{id}/ | Actualizar tarea | Sí |
+7. DELETE | /tasks/{id}/ | Eliminar tarea | Sí |
 
 # Decisiones técnicas
 - Se usó Django REST Framework por conocimiento y facilidad para construir APIs REST.
